@@ -1,12 +1,8 @@
 // tailwind.config.js
-theme: {
-    extend: {
-      colors: {
-        ecogreen: '#4CAF50',
-        ecogreenlight: '#A1D74D',
-        ecodark: '#0B2F3A',
-        ecoaccent: '#D1E65A',
-      },
-    },
-  }
-  
+import forms from '@tailwindcss/forms'
+import typography from '@tailwindcss/typography'
+
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  plugins: [forms(), typography()],
+}

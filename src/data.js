@@ -1,0 +1,96 @@
+export const categories = [
+    'Wildlife Conservation',
+    'Sustainable Living',
+    'Climate Change',
+    'Community Initiatives',
+    'Biodiversity',
+    'Marine Conservation',
+    ];
+
+    export const articles = [
+        {
+            id: 1,
+            title: 'Protecting Endangered Species',
+            summary: 'Learn about the efforts to save endangered species and their habitats.',
+            Image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdpbGRsaWZlfGVufDB8fHx8MTY4MjQ5NTY0Ng&ixlib=rb-4.0.3&q=80&w=400',
+            category: 'Wildlife Conservation',
+
+        },
+        {
+            id: 2,
+            title: 'Sustainable Farming Practices',
+            summary: 'Discover how sustainable farming can help the environment.',
+            Image: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHN1c3RhaW5hYmxlJTIwZmFybWluZ3xlbnwwfHx8fDE2ODI0OTU2NDY&ixlib=rb-4.0.3&q=80&w=400',
+            category: 'Sustainable Living',
+        },
+        {
+            id: 3,
+            title: 'Climate Change and Its Impact',
+            summary: 'Understand the effects of climate change on our planet.',
+            Image: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHN1c3RhaW5hYmxlJTIwZmFybWluZ3xlbnwwfHx8fDE2ODI0OTU2NDY&ixlib=rb-4.0.3&q=80&w=400',
+            category: 'Climate Change',
+        },
+        {
+            id: 4,
+            title: 'Community Clean-Up Initiatives',
+            summary: 'Join local efforts to clean up parks and beaches.',
+            Image: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHN1c3RhaW5hYmxlJTIwZmFybWluZ3xlbnwwfHx8fDE2ODI0OTU2NDY&ixlib=rb-4.0.3&q=80&w=400',
+            category: 'Community Initiatives',
+        },
+        {
+            id:5,
+            title: 'Biodiversity and Ecosystem Health',
+            summary: 'Explore the importance of biodiversity for ecosystem health.',
+            Image: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHN1c3RhaW5hYmxlJTIwZmFybWluZ3xlbnwwfHx8fDE2ODI0OTU2NDY&ixlib=rb-4.0.3&q=80&w=400',
+            category: 'Biodiversity',
+        },
+        {
+            id: 6,
+            title: 'Marine Conservation Efforts',
+            summary: 'Learn about initiatives to protect our oceans and marine life.',
+            Image: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHN1c3RhaW5hYmxlJTIwZmFybWluZ3xlbnwwfHx8fDE2ODI0OTU2NDY&ixlib=rb-4.0.3&q=80&w=400',
+            category: 'Marine Conservation',
+        },
+        {
+            id: 7,
+            title: 'Wildlife Photography for Conservation',
+            summary: 'Discover how photography can raise awareness for wildlife conservation.',
+            Image: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHN1c3RhaW5hYmxlJTIwZmFybWluZ3xlbnwwfHx8fDE2ODI0OTU2NDY&ixlib=rb-4.0.3&q=80&w=400',
+            category: 'Wildlife Conservation',
+        },
+        {
+            id: 8,
+            title: 'Sustainable Fashion Choices',
+            summary: 'Learn how to make eco-friendly fashion choices.',
+            Image: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHN1c3RhaW5hYmxlJTIwZmFybWluZ3xlbnwwfHx8fDE2ODI0OTU2NDY&ixlib=rb-4.0.3&q=80&w=400',
+            category: 'Sustainable Living',
+        },
+        {
+            id: 9,
+            title: 'Climate Action and Advocacy',
+            summary: 'Get involved in climate action and advocacy efforts.',
+            Image: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHN1c3RhaW5hYmxlJTIwZmFybWluZ3xlbnwwfHx8fDE2ODI0OTU2NDY&ixlib=rb-4.0.3&q=80&w=400',
+            category: 'Climate Change',
+        },
+        {
+            id: 10,
+            title: 'Community Gardening Projects',
+            summary: 'Join community gardening projects to promote local food production.',
+            Image: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHN1c3RhaW5hYmxlJTIwZmFybWluZ3xlbnwwfHx8fDE2ODI0OTU2NDY&ixlib=rb-4.0.3&q=80&w=400',
+            category: 'Community Initiatives',
+        },
+        {
+            id: 11,
+            title: 'Biodiversity Hotspots Around the World',
+            summary: 'Explore biodiversity hotspots and their significance.',
+            Image: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHN1c3RhaW5hYmxlJTIwZmFybWluZ3xlbnwwfHx8fDE2ODI0OTU2NDY&ixlib=rb-4.0.3&q=80&w=400',
+            category: 'Biodiversity',
+        },
+        {
+            id: 12,
+            title: 'Protecting Coral Reefs',
+            summary: 'Learn about the importance of coral reefs and how to protect them.',
+            Image: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHN1c3RhaW5hYmxlJTIwZmFybWluZ3xlbnwwfHx8fDE2ODI0OTU2NDY&ixlib=rb-4.0.3&q=80&w=400',
+            category: 'Marine Conservation',
+        },
+    ]

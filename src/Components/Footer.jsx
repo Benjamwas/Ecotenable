@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="w-full fixed bottom-0 left-0 bg-white shadow-md border-t border-gray-200 z-50">
+    <footer className="w-full bottom-0  left-0 bg-white shadow-md border-t border-gray-200 z-50">
       <div className="flex flex-col md:flex-row justify-between items-center px-6 py-4 space-y-4 md:space-y-0">
         {/* Logo & Name */}
         <div className="flex items-center space-x-3">
