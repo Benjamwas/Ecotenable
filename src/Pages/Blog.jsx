@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import axios from 'axios';
 import { io } from 'socket.io-client';
 
-const socket = io('http://localhost:5001');
+const socket = io('http://localhost:5001')
 
 const BlogPage = () => {
   const [filter, setFilter] = useState('All');
@@ -14,7 +14,7 @@ const BlogPage = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await axios.get('http://localhost:5001/api/blogs');
+        const res = await axios.get('https://ecotenable-node-js.vercel.app/api/blogs');
         setBlogs(res.data);
         const uniqueCategories = Array.from(new Set(res.data.map(blog => blog.category).filter(Boolean)));
         setCategories(uniqueCategories);
@@ -49,7 +49,7 @@ const BlogPage = () => {
 
   return (
     <div className="bg-green-50 py-8 w-full min-h-screen font-sans text-gray-800">
-      <header className="bg-green-100 py-10 px-4 text-center w-full ">
+      <header className="bg-green-50 pt-24 pb-8 w-full min-h-screen font-sans text-gray-800 ">
         <motion.h1
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

@@ -13,7 +13,7 @@ const BookingsList = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get('http://localhost:5001/api/booking');
+        const res = await axios.get('https://ecotenable-node-js.vercel.app/api/booking');
         const data = Array.isArray(res.data) ? res.data : [];
         setBookings(data);
         setFilteredData(data);

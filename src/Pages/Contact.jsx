@@ -26,7 +26,7 @@ const handleSubmit = async (e) => {
   try {
     console.log('Form data before sending:', formData);
 
-    const response = await axios.post('http://localhost:5001/api/contact', formData);
+    const response = await axios.post('https://ecotenable-node-js.vercel.app/api/contact', formData);
 
     // Axios only throws for non-2xx, so if we get here, it's a success
     toast.success('Message sent successfully!');
@@ -71,16 +71,16 @@ const handleSubmit = async (e) => {
 };
 
   return (
-    <div className="flex py-8 h-screen text-[#1F1F1F] md:flex-row flex-col">
+    <div className="flex py-8 pt-34 h-screen text-[#1F1F1F] md:flex-row  sm: mb- 8 flex-col">
       {/* Left Section */}
       <motion.div 
         initial={{ opacity: 0, x: -50 }} 
         animate={{ opacity: 1, x: 0 }} 
         transition={{ duration: 0.8 }}
-        className=" md:w-1/2 bg-[#102820] text-white p-16 flex flex-col justify-center"
+        className=" md:w-1/2 bg-[#102820] text-white p-16  flex flex-col justify-center"
       >
         <h1 className="text-4xl font-bold mb-4">We’d love to hear from you</h1>
-        <div className="flex space-x-6 mt-8">
+        <div className="flex space-x-6 mt-8 pl-16">
           <div className="w-24 h-24 border-2 border-dashed rounded-full"></div>
           <div className="w-24 h-24 border-2 border-dashed rounded-full"></div>
           <div className="w-24 h-24 border-2 border-dashed rounded-full"></div>

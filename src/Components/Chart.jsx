@@ -22,7 +22,7 @@ const Chart = () => {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const res = await axios.get('http://localhost:5001/api/booking');
+        const res = await axios.get('${process.env.REACT_APP_API_URL}/api/booking');
         // Group bookings by service (or change to status/category as needed)
         const counts = {};
         res.data.forEach(b => {

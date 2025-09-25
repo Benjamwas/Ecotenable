@@ -44,47 +44,35 @@ const Home = () => {
 
 const testimonials = [
   {
-    name: "Fatima Khoury",
-    username: "elatory_curtains_98",
-    avatar: "https://randomuser.me/api/portraits/women/1.jpg",
+    name: "Pastor Peter",
+    username: "Oasis Of life Centres",
+    avatar: "",
     feedback:
-      "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of common and **challenging** words.",
+    "The Website and mobile application was very easy to use and navigate . ",
   },
   {
-    name: "Hassan Ali",
-    username: "turbulent_unicorn_29",
-    avatar: "https://randomuser.me/api/portraits/men/2.jpg",
+    name: "Kennedy Mutua",
+    username: "Dr Kennedy Mutua",
+    avatar: "",
     feedback:
-      "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of common and **challenging** words.",
+      "The Services Offered by the team were very professional and they delivered on time. I highly recommend them.",
   },
   {
-    name: "Jorge Martínez",
-    username: "nefarious_jellybeans_91",
-    avatar: "https://randomuser.me/api/portraits/men/3.jpg",
+    name: "Sr Agnes",
+    username: "Vendramini Schools",
+    avatar: "",
     feedback:
-      "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of common and **challenging** words.",
+      "The School Website and mobile application was very easy to use and navigate. The team was very professional and delivered on time.",
   },
   {
-    name: "Nicolás Sánchez",
-    username: "pervasive_tinker_83",
-    avatar: "https://randomuser.me/api/portraits/men/4.jpg",
+    name: "Dr Kiula",
+    username: "KUTRRH",
+    avatar: "",
     feedback:
-      "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of common and **challenging** words.",
+      "As an International Hospital, we needed a website that could handle high traffic and provide a seamless user experience. The team delivered beyond our expectations.",
   },
-  {
-    name: "Noel Jensen",
-    username: "nefarious_shop_47",
-    avatar: "https://randomuser.me/api/portraits/men/5.jpg",
-    feedback:
-      "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of common and **challenging** words.",
-  },
-  {
-    name: "Ahmad Khan",
-    username: "antic_circus_76",
-    avatar: "https://randomuser.me/api/portraits/men/6.jpg",
-    feedback:
-      "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of common and **challenging** words.",
-  },
+  
+
 ];
 
 const services = [
@@ -197,7 +185,7 @@ const backgroundImages = [
   <section
       ref={ref}
       id="hero"
-      className="h-screen relative overflow-hidden w-full flex items-center justify-center px-2 py-24 bg-center bg-cover transition-all duration-1000"
+      className="min-h-screen h-[100dvh] w-full relative overflow-hidden flex items-center justify-center px-2 py-24 pt-32 bg-center bg-cover transition-all duration-1000"
       style={{
         backgroundImage: `url('${backgroundImages[bgIndex]}')`,
       }}
@@ -278,7 +266,7 @@ const backgroundImages = [
         </div>
 
         {/* Right Floating Images */}
-        <div className="relative w-full flex justify-center gap-8 px-6">
+        <div className="relative w-full flex justify-center gap-8 px-6 pb-8">
           {[image1, image2].map((img, index) => (
             <motion.img
               key={index}
@@ -293,71 +281,65 @@ const backgroundImages = [
       </motion.div>
     </section>
 {/* Section 1: About Us */}
-   <section className="bg- h-full w-full py-16  lg:px-20">
-    <div className="text-center mb-12">
-      <p className="text-sm white font-bold underline align-left tracking-widest uppercase">ABOUT US</p>
+<section className="bg-white h-full w-full py-16 lg:px-20">
+  <div className="text-center mb-12">
+    <p className="text-sm text-blue-500 font-bold underline align-left tracking-widest uppercase">ABOUT US</p>
+  </div>
+  {/* Main Section */}
+  <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+    {/* Single Circular Image with Leaf Stretch */}
+    <div className="relative w-full flex justify-center items-center my-8">
+      {/* Leaf Top Right */}
+      <svg
+        className="absolute -top-8 -right-8 w-20 h-20 text-green-400 opacity-70"
+        viewBox="0 0 64 64"
+        fill="currentColor"
+      >
+        <ellipse cx="48" cy="16" rx="16" ry="32" transform="rotate(45 48 16)" />
+      </svg>
+      {/* Leaf Bottom Left */}
+      <svg
+        className="absolute -bottom-8 -left-8 w-20 h-20 text-green-600 opacity-60"
+        viewBox="0 0 64 64"
+        fill="currentColor"
+      >
+        <ellipse cx="16" cy="48" rx="16" ry="32" transform="rotate(-45 16 48)" />
+      </svg>
+      {/* Circular Image */}
+      <img
+        src={image3}
+        alt="Consultation"
+        className="rounded-full shadow-2xl w-64 h-64 object-cover border-8 border-black m-8"
+      />
     </div>
+    {/* Text Content */}
+    <div>
       
-      {/* Main Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
-        {/* Images with Play Button */}
-        <div className="relative w-full flex justify-center">
-          <img
-            src={image3}
-            alt="Consultation"
-            className="rounded-xl shadow-lg w-full max-w-md"
-          />
-          <img
-            src={image1}
-            alt="Discussion"
-            className="rounded-xl shadow-lg w-full max-w-md mt-6 lg:mt-4 lg:ml-[-80px]"
-          />
-          {/* Play Button Overlay */}
-          <div className="absolute top-20 left-45 bg-blue-600 p-4 rounded-full text-white shadow-lg cursor-pointer">
-            <FaPlay />
-          </div>
+      <h2 className="text-3xl lg:text-4xl font-bold mb-4 leading-snug text-black">
+        Ensuring Your Success Trusted <br /> IT and Climate Resolutions
+      </h2>
+      <p className="text-black mb-6">
+        At Ecotenable.com we are a cross-continental environmental and climate resolution consultancy based in Kenya and the United Kingdom.
+        We specialize in providing science-driven, practical, and scalable solutions to environmental challenges affecting communities, businesses, and governments.
+        Our work spans across climate adaptation, environmental impact assessments, sustainable development planning, renewable energy integration, water resource management, and carbon reduction strategies. 
+        Whether you’re an NGO seeking community-based climate interventions, a government agency navigating policy and compliance, or a business aiming for sustainability and ESG alignment—we bring tailored, data-informed strategies that drive measurable impact. With a team of experienced climate experts, environmental scientists, and policy advisors, we are dedicated to helping you build a greener, more resilient future.
+      </p>
+     
+      {/* Contact + Button */}
+      <div className="flex items-center gap-4 flex-wrap">
+        <div className="flex items-center gap-3 bg-blue-50 p-4 rounded-md text-black font-semibold border border-black">
+          <FaPhoneAlt />
+          +44 7399 286 116/ 0739433017
         </div>
-
-        {/* Text Content */}
-        <div>
-          <p className="text-blue-500 font-semibold mb-2">
-            IT Support for Business
-          </p>
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 leading-snug">
-            Ensuring Your Success Trusted <br /> IT and Climate Resolutions
-          </h2>
-          <p className="text-black-600 mb-6">
-           At Ecotenable.com we are a cross-continental environmental and climate resolution consultancy based in Kenya and the United Kingdom.
-            We specialize in providing science-driven, practical, and scalable solutions to environmental challenges affecting communities, businesses, and governments.
-             Our work spans across climate adaptation, environmental impact assessments, sustainable development planning, renewable energy integration, water resource management, and carbon reduction strategies. 
-             Whether you’re an NGO seeking community-based climate interventions, a government agency navigating policy and compliance, or a business aiming for sustainability and ESG alignment—we bring tailored, data-informed strategies that drive measurable impact. With a team of experienced climate experts, environmental scientists, and policy advisors, we are dedicated to helping you build a greener, more resilient future.
-          </p>
-          <ul className="mb-6 space-y-2 text-black-700">
-            <li>✅ Climate Changes Impact Asssement</li>
-            <li>✅ Project Implementation Management</li>
-            <li>✅ Water Diplomacy and Management</li>
-            <li>✅ Climate Change Adaptation and Mitigation</li>
-            <li>✅ Sustainable Development Goals (SDGs) Alignment</li>
-            <li>✅ Community Engagement and Education</li>
-            <li>✅ Policy Advocacy and Research</li>
-            <li>✅ Environmental Impact Assessments</li>
-            <li>✅ Renewable Energy Solutions</li>
-            <li>✅ Web Development and designs</li>
-          </ul>
-          {/* Contact + Button */}
-          <div className="flex items-center gap-4 flex-wrap">
-            <div className="flex items-center gap-3 bg-blue-50 p-4 rounded-md text-blue-600 font-semibold">
-              <FaPhoneAlt />
-            +44 7399 286 116/ 0739433017
-            </div>
-           <Link to="/About"> <button className="bg-blue-600 text-white px-6 py-2 rounded-full shadow hover:bg-blue-700 transition">
-              More About Us
-            </button>
-            </Link>
-          </div>
-        </div>
+        <Link to="/About">
+          <button className="bg-black text-white px-6 py-2 rounded-full shadow hover:bg-gray-800 transition">
+            More About Us
+          </button>
+        </Link>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
    
 
@@ -543,8 +525,8 @@ const backgroundImages = [
       
     <section className="py-16 px-4 bg-white">
       <div className="text-center mb-12">
-        <p className="text-sm text-orange-500 font-semibold tracking-widest">TESTIMONIALS</p>
-        <h2 className="text-3xl font-bold mt-2">Our trusted clients</h2>
+        <p className="text-sm text-orange-500 font-semibold tracking-widest">WHAT OUR CLIENTS SAY:</p>
+        <h2 className="text-3xl  text-black font-s/ bold mt-2">Our trusted clients</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {testimonials.map((t, index) => (

@@ -7,6 +7,7 @@ import {
   FaLinkedin,
   FaEnvelope,
 } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -20,22 +21,46 @@ const Footer = () => {
           </span>
         </div>
 
-        {/* Quick Links */}
-        <div className="flex flex-col text-center space-y-1 font-medium">
-          <h3 className="text-lg font-semibold" style={{ color: '#0B2F3A' }}>Quick Links</h3>
-          {['Home', 'Services', 'Blog', 'Contact'].map((label) => (
-            <a
-              key={label}
-              href={`/${label.toLowerCase()}`}
-              className="hover:underline underline-offset-4"
-              style={{ color: '#0B2F3A' }}
-              onMouseEnter={(e) => (e.target.style.color = '#FFD700')}
-              onMouseLeave={(e) => (e.target.style.color = '#0B2F3A')}
-            >
-              {label}
-            </a>
-          ))}
-        </div>
+        {/* Quick Links */}      
+<div className="flex flex-col text-center space-y-1 font-medium">
+  <h3 className="text-lg font-semibold" style={{ color: '#0B2F3A' }}>Quick Links</h3>
+  <Link
+    to="/"
+    className="hover:underline underline-offset-4"
+    style={{ color: '#0B2F3A' }}
+    onMouseEnter={e => (e.target.style.color = '#FFD700')}
+    onMouseLeave={e => (e.target.style.color = '#0B2F3A')}
+  >
+    Home
+  </Link>
+  <Link
+    to="/services"
+    className="hover:underline underline-offset-4"
+    style={{ color: '#0B2F3A' }}
+    onMouseEnter={e => (e.target.style.color = '#FFD700')}
+    onMouseLeave={e => (e.target.style.color = '#0B2F3A')}
+  >
+    Services
+  </Link>
+  <Link
+    to="/blog"
+    className="hover:underline underline-offset-4"
+    style={{ color: '#0B2F3A' }}
+    onMouseEnter={e => (e.target.style.color = '#FFD700')}
+    onMouseLeave={e => (e.target.style.color = '#0B2F3A')}
+  >
+    Blog
+  </Link>
+  <Link
+    to="/contact"
+    className="hover:underline underline-offset-4"
+    style={{ color: '#0B2F3A' }}
+    onMouseEnter={e => (e.target.style.color = '#FFD700')}
+    onMouseLeave={e => (e.target.style.color = '#0B2F3A')}
+  >
+    Contact
+  </Link>
+</div>
 
         {/* Social Media Icons */}
         <div className="flex flex-col items-center space-y-1">

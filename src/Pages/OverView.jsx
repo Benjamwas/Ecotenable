@@ -5,7 +5,7 @@ import { Bell, Settings, TrendingUp, DollarSign, BarChart3, PieChart, Activity }
 import Bookings from '../Pages/Bookings'
 const OverviewPage = () => {
   return (
-    <div className="space-y-6 top-6">
+    <div className="space-y-6 top-6 pt-18">
       {/* Header */}
       <div className="flex  top-4 items-center justify-between">
         <h2 className="text-3xl font-semibold text-white">Sales Overview</h2>

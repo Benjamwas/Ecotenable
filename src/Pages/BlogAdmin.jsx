@@ -22,7 +22,8 @@ const BlogAdminPage = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await axios.get('http://localhost:5001/api/blogs');
+        const res = await axios.get('https://ecotenable-node-js.vercel.app/api/blogs');
+        console.log('Fetched blogs:', res.data);
         setBlogs(res.data);
       } catch (error) {
         console.error('Failed to fetch blogs:', error);
@@ -46,7 +47,7 @@ const BlogAdminPage = () => {
       // Update blog
       try {
         const res = await axios.put(
-          `http://localhost:5001/api/blogs/${editingBlog.id}`,
+          `https://ecotenable-node-js.vercel.app/api/blogs/${editingBlog.id}`,
           {
             ...formData,
             featured_image: formData.featuredImage // map to backend field
@@ -60,7 +61,7 @@ const BlogAdminPage = () => {
     } else {
       // Create blog
       try {
-        const res = await axios.post('http://localhost:5001/api/blogs', {
+        const res = await axios.post('https://ecotenable-node-js.vercel.app/api/blogs', {
           ...formData,
           featured_image: formData.featuredImage // map to backend field
         });
@@ -88,7 +89,7 @@ const BlogAdminPage = () => {
   // Handle delete
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5001/api/blogs/${id}`);
+      await axios.delete(`https://ecotenable-node-js.vercel.app/api/blogs/${id}`);
       setBlogs(blogs.filter(blog => blog.id !== id));
     } catch (error) {
       console.error('Failed to delete blog:', error);
@@ -96,7 +97,7 @@ const BlogAdminPage = () => {
   };
 
   return (
-    <div className="p-6 bg-[#F8F9FA] min-h-screen">
+    <div className="p-18 pt-32 bg-[#F8F9FA] min-h-screen">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold text-green-900">Blog Admin Panel</h1>
         <motion.button

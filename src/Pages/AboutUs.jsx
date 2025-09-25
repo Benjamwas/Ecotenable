@@ -30,10 +30,10 @@ const AboutUsPage = () => {
     <div className="text-gray-900 font-sans bg-white">
 
       {/* Hero Section */}
-      <section className="relative h-[90vh]  bg-center bg-no-repeat flex items-center justify-center" style={{ backgroundImage: `url(${image6})` }}>
+      <section className="relative w-full h-[90vh] bg-cover bg-center bg-no-repeat flex items-center justify-center" style={{ backgroundImage: `url(${image6})` }}>
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="text-center px-4">
-          <h1 className="text-4xl md:text-6xl  text-left  mt-6 ml-56 font-bold text-white/500 mb-4">About Us</h1>
+          <h1 className="text-4xl md:text-6xl text-center mt-6 font-bold text-white mb-4 mx-auto">About Us</h1>
           <p className="text-black text-lg md:text-xl max-w-2xl mx-auto">Dedicated to transforming lives and protecting the planet with sustainable technology solutions.</p>
         </motion.div>
       </section>
@@ -45,7 +45,7 @@ const AboutUsPage = () => {
           <h2 className="text-3xl font-bold mb-4 text-green-900">Welcome Message</h2>
           <p className="text-lg text-gray-700">Welcome to Ecotenable
 
-As the world faces increasingly complex environmental challenges, it is more important than ever that we come together with courage, innovation, and a shared commitment to a sustainable future. At [Your Company Name], we believe that every step—no matter how small—counts toward building a world where people and nature thrive in harmony.
+As the world faces increasingly complex environmental challenges, it is more important than ever that we come together with courage, innovation, and a shared commitment to a sustainable future. At Ecotenable, we believe that every step—no matter how small—counts toward building a world where people and nature thrive in harmony.
 
 From Kenya to the United Kingdom and beyond, our work is driven by a deep sense of responsibility and purpose. We are here not just to provide consultancy, but to walk with you in creating lasting, transformative solutions for our planet. Whether you're a business striving for greener practices, a government shaping policy, or an organization working at the grassroots—we see you, we stand with you, and we’re ready to support your journey.
 

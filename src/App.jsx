@@ -22,8 +22,8 @@ function App() {
   return (
     <Router>
       <div className='App'>
-        <Header />
-        <div className="mt-16">
+        <Header/>
+        <div className="flex flex-col min-h-screen">
           <Navigation />
 
           {/* Main content changes based on the route */}

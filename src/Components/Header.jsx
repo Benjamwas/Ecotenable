@@ -3,7 +3,7 @@ import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin, FaEnvelope, FaPhoneAlt 
 
 const Header = () => {
   return (
-    <div className="bg-blue-500  h-16 flex flex-wrap items-center justify-between px-4 w-full fixed top-0 left-0 z-10 h-16 mb-16">
+    <div className="bg-blue-500 h-20 sm:h-16 flex flex-wrap items-center justify-between px-4 w-full fixed top-0 left-0 z-10 mb-24">
       {/* Contact Info Section */}
       <div className="text-gray-800 text-sm sm:text-lg italic flex items-center space-x-2">
         <FaPhoneAlt className="text-black text-xl sm:text-2xl" />

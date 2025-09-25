@@ -68,20 +68,6 @@ const testimonials = [
     feedback:
       "As an International Hospital, we needed a website that could handle high traffic and provide a seamless user experience. The team delivered beyond our expectations.",
   },
-  {
-    name: "Noel Jensen",
-    username: "nefarious_shop_47",
-    avatar: "https://randomuser.me/api/portraits/men/5.jpg",
-    feedback:
-      "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of common and **challenging** words.",
-  },
-  {
-    name: "Ahmad Khan",
-    username: "antic_circus_76",
-    avatar: "https://randomuser.me/api/portraits/men/6.jpg",
-    feedback:
-      "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of common and **challenging** words.",
-  },
 ];
 
 const benefits = [
@@ -193,7 +179,7 @@ const Services = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5001/api/booking', data); // Replace 'backend-url' with your actual API endpoint
+      const response = await axios.post('https://ecotenable-node-js.vercel.app/api/booking', data); // Replace 'backend-url' with your actual API endpoint
       console.log(response.data);
       alert('Booking successful!');
       setName('');
