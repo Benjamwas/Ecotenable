@@ -179,7 +179,7 @@ const Services = () => {
     }
 
     try {
-      const response = await axios.post('https://ecotenable-node-js.vercel.app/api/booking', data); // Replace 'backend-url' with your actual API endpoint
+      const response = await axios.post('https://api.ecotenable.com/api/booking', data); // Replace 'backend-url' with your actual API endpoint
       console.log(response.data);
       alert('Booking successful!');
       setName('');

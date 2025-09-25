@@ -22,7 +22,7 @@ const BlogAdminPage = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await axios.get('https://ecotenable-node-js.vercel.app/api/blogs');
+        const res = await axios.get('https://api.ecotenable.com/api/blogs');
         console.log('Fetched blogs:', res.data);
         setBlogs(res.data);
       } catch (error) {
@@ -47,7 +47,7 @@ const BlogAdminPage = () => {
       // Update blog
       try {
         const res = await axios.put(
-          `https://ecotenable-node-js.vercel.app/api/blogs/${editingBlog.id}`,
+          `https://api.ecotenable.com/api/blogs/${editingBlog.id}`,
           {
             ...formData,
             featured_image: formData.featuredImage // map to backend field
@@ -61,7 +61,7 @@ const BlogAdminPage = () => {
     } else {
       // Create blog
       try {
-        const res = await axios.post('https://ecotenable-node-js.vercel.app/api/blogs', {
+        const res = await axios.post('https://api.ecotenable.com/api/blogs', {
           ...formData,
           featured_image: formData.featuredImage // map to backend field
         });
@@ -89,7 +89,7 @@ const BlogAdminPage = () => {
   // Handle delete
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://ecotenable-node-js.vercel.app/api/blogs/${id}`);
+      await axios.delete(`https://api.ecotenable.com/api/blogs/${id}`);
       setBlogs(blogs.filter(blog => blog.id !== id));
     } catch (error) {
       console.error('Failed to delete blog:', error);

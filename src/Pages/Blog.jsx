@@ -3,7 +3,10 @@ import { motion } from 'framer-motion';
 import axios from 'axios';
 import { io } from 'socket.io-client';
 
-const socket = io('http://localhost:5001')
+const socket = io('https://ecotenable.com', {
+  path: '/socket.io',
+  transports: ['websocket'],
+});
 
 const BlogPage = () => {
   const [filter, setFilter] = useState('All');
@@ -14,7 +17,7 @@ const BlogPage = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await axios.get('https://ecotenable-node-js.vercel.app/api/blogs');
+        const res = await axios.get('https://api.ecotenable.com/api/blogs');
         setBlogs(res.data);
         const uniqueCategories = Array.from(new Set(res.data.map(blog => blog.category).filter(Boolean)));
         setCategories(uniqueCategories);
