@@ -4,7 +4,7 @@ import { FiEdit, FiTrash2, FiPlus } from 'react-icons/fi';
 import { FaEye } from 'react-icons/fa';
 import axios from 'axios';
 import {io} from 'socket.io-client';
-const socket = io('http://localhost:5001'); // Connect to your backend server
+const socket = io('https://ecotenable.com/'); // Connect to your backend server
 
 const BlogAdminPage = () => {
   const [blogs, setBlogs] = useState([]);

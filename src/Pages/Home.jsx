@@ -160,7 +160,7 @@ const backgroundImages = [
     }
 
     try {
-      const response = await axios.post('http://localhost:5001/api/booking', data); 
+      const response = await axios.post('https://api.ecotenable.com/api/booking', data); 
       console.log(response.data);
       alert('Booking successful!');
       setName('');
