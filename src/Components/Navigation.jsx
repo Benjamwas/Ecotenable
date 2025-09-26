@@ -73,6 +73,17 @@ const Navigation = () => {
             
           </div>
 
+          <div className="hidden md:flex space-x-4">
+            <Link
+            to= '/SignUp'
+            className='font-semibold px-4 py-2 rounded transition'
+            style={{backgroundColor: '#FFD700', color: '#0B2F3A'}}
+            >
+              Sign Up
+            </Link>
+            
+          </div>
+
           {/* Hamburger */}
           <div className="md:hidden flex items-center">
             <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none" style={{ color: '#0B2F3A' }}>
@@ -112,12 +123,7 @@ const Navigation = () => {
             ))}
           </ul>
           <div className="pt-4 space-y-2">
-            <button
-              className="w-full py-2 rounded"
-              style={{ backgroundColor: '#FFD700', color: '#0B2F3A' }}
-            >
-              Sign Up
-            </button>
+          
             <button
               className="w-full py-2 rounded transition"
               style={{ backgroundColor: '#0B2F3A', color: '#fff' }}

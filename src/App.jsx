@@ -13,6 +13,7 @@ import OverviewPage from './Pages/OverView';
 import Login from './Pages/Login';
 import BlogAdminPage from './Pages/BlogAdmin';
 import DashboardLayout from './Components/DashboardLayout';
+import SignUp from './Pages/SignUp';
 import Bookings from './Pages/Bookings';
 import './App.css';
 import "slick-carousel/slick/slick.css"; 
@@ -33,6 +34,7 @@ function App() {
   <Route path="/contact" element={<Contact />} />
   <Route path="/about" element={<About />} />
   <Route path="/blog" element={<Blog />} />
+  <Route path="/signup" element={<SignUp />} />
   <Route path="/overview" element={<OverviewPage />} />
   <Route path="/dashboard" element={<DashboardLayout />}>
     <Route index element={<OverviewPage />} />
