@@ -26,7 +26,7 @@ const handleSubmit = async (e) => {
   try {
     console.log('Form data before sending:', formData);
 
-    const response = await axios.post('https://ecotenable-node-js.vercel.app/api/contact', formData);
+    const response = await axios.post('https://api.ecotenable.com/api/contact', formData);
 
     // Axios only throws for non-2xx, so if we get here, it's a success
     toast.success('Message sent successfully!');

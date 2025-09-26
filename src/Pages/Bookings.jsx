@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { io } from 'socket.io-client';
-const socket = io('http://localhost:5001');
+const socket = io('https://ecotenable.com'); // Connect to your backend server
 
 const BookingsList = () => {
   const [bookings, setBookings] = useState([]);
@@ -13,7 +13,7 @@ const BookingsList = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get('https://ecotenable-node-js.vercel.app/api/booking');
+        const res = await axios.get('https://api.ecotenable.com/api/booking');
         const data = Array.isArray(res.data) ? res.data : [];
         setBookings(data);
         setFilteredData(data);

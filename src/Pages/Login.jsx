@@ -24,7 +24,7 @@ export default function Login() {
     try {
       // Send a POST request to the login API
       const res = await axios.post(
-        'https://ecotenable-node-js.vercel.app/api/auth/login', // Corrected URL
+        'https://api.ecotenable.com/api/auth/login', // Corrected URL
         { email, password },
         { withCredentials: true }
       );
@@ -52,7 +52,7 @@ export default function Login() {
     try{
         // sends a POST request to the backend API with the user's email and pwd
         const res= await axios.post(
-            'https://ecotenable-node-js.vercel.app/api/auth/register', // sign up api endpoint
+            'https://api.ecotenable.com/api/auth/register', // sign up api endpoint
             {email:signUpEmail, password:signUpPassword}, // data sent in the req body
             {withCredentials:true}); // ensures cookies are sent with the request
 
